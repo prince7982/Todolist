@@ -1,0 +1,112 @@
+body{
+    background-image: url("photo/download.jpg");
+   background-size: cover;
+   margin: 0; /* Remove default body margin */
+   padding: 0; /* Remove default body margin */
+   font-family: Arial, sans-serif; /* Ensure consistent font across devices */
+}
+.container{
+    width: 90%; /* percentage width for responsiveness */
+    max-width: 500px; /* Maximum width to maintain layout on larger screens */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 25px auto; /* Center the container */
+    box-shadow: 2px 2px 10px rgb(139, 7, 117);
+}
+.container:hover{
+    box-shadow: 4px 4px 20px rgb(139, 7, 117);
+
+}
+input{
+    width: 70%; /* Use a percentage width */
+    padding: 10px;
+    margin-right: 8px;
+    border: 3px solid rgb(103, 184, 184);
+    color: black;
+    font-weight: bold;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+}
+input:hover{
+    border: 3px solid #7173EB;
+}
+button{
+    width: 20%;  /* Use a percentage width */
+    height: 48px;
+    background-color: rgb(103, 184, 184);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px black;
+}
+button:hover{
+    background-color: #7173EB;
+    box-shadow: 4px 4px 10px black;  
+}
+
+.text ul{
+    position: relative;
+    background-color: #7E7EA3;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px auto;  /* Center the list items */
+    max-width: 460px; /* Limit the width to prevent stretching on large screens */
+    text-align: left;
+}
+.text ul:hover{
+    box-shadow: 4px 4px 10px black;  
+}
+.text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    body{
+       background-image: url("/photo/bgsmall.jpeg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 100vh;
+    }
+    .container {
+        width: 90%; /* More space on smaller screens */
+        padding: 15px;
+        margin-top: 10%;
+    }
+
+    input{
+        width: 94%; /* Make input and button full width on smaller screens */
+        margin: 5px 0; /* Margin for spacing */
+        display: block; /* Display as block elements */
+    }
+
+    button {
+        height: auto; /* Allow button height to adjust */
+        padding: 10px; /* Increase padding for better touch targets */
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        font-size: 14px; /* Smaller font size on very small screens */
+    }
+
+    .text ul {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+}
